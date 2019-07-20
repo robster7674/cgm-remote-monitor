@@ -76,14 +76,17 @@
 </head>
 
 <body>
-
+<a class="weatherwidget-io" href="https://forecast7.com/en/40d59n105d08/fort-collins/?unit=us" data-mode="Current" data-theme="dark" >FORT COLLINS WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
 	<main>
 		<div class="inner">
+			<div id="clock"></div>
 			<div id="trend">
 				<div id="bgnow"></div>
 				<div id="arrowDiv"><img id="arrow" src=""/></div>
 			</div>
-			<div id="clock"></div>
 		</div>
 	</main>
 	
