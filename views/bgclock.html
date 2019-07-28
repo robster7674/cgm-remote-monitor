@@ -143,6 +143,7 @@
 			console.log('init');
 			query( );
 			setInterval(query, 1 * 60 * 1000);
+			setInterval('__weatherwidget_init()', 15 * 60 * 1000);
 		}
 
 		init( );
