@@ -6,7 +6,7 @@
   display: flex;
   flex-grow: 0;
   font-weight: 700;
-  font-size: 30vmin;
+  font-size: 25vmin;
   padding: 0 20px;
   margin: 0;
 }
@@ -19,7 +19,7 @@ img#arrow {
 
 #clock {
   font-weight: 700;
-  font-size: 25vmin;
+  font-size: 30vmin;
   display: inline;
 }
 
