@@ -227,6 +227,7 @@ function create (env, ctx) {
       file: "bgclock.html"
       , title: 'bgclock'
       , type: 'bgclock'
+    }
   };
 
   Object.keys(appPages).forEach(function(page) {
