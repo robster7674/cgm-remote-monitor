@@ -29,9 +29,9 @@
                                                                                      > Radius: <input type="number" class="radius" id="cfg_gr_radius" name="cfg_gr_radius" min="1" max="99" value="15"
                                                                                      > Hours: <input type="number" class="hours" id="cfg_gr_hours" name="cfg_gr_hours" min="1" max="99" value="3"></p>
         <p><input type="button" class="owm" id="cfg_ow" name="ow" value="Add weather"> Size: <input type="number" class="size" id="cfg_ow_size" name="cfg_ow_size" min="1" max="99" value="10"><br
-                                                                                     > Units: <input type="radio" class="units" id="cfg_ow_units" name="cfg_ow_units" value="F"><label for="F">F</label
-                                                                                             ><input type="radio" class="units" id="cfg_ow_units" name="cfg_ow_units" value="C"><label for="C">C</label
-                                                                                     > ZIP code[,country code]: <input type="text" class="zip" id="cfg_ow_zip" name="cfg_ow_zip" value=""><br
+                                                                                     > Units: <input type="radio" class="units" id="cfg_ow_units_f" name="cfg_ow_units" value="F"><label for="cfg_ow_units_f">F</label
+                                                                                             ><input type="radio" class="units" id="cfg_ow_units_c" name="cfg_ow_units" value="C"><label for="cfg_ow_units_c">C</label
+                                                                                     > ZIP[,country]: <input type="text" class="zip" id="cfg_ow_zip" name="cfg_ow_zip" value=""><br
                                                                                      > Openweathermap.org API-key <input type="text" class="key" id="cfg_ow_key" name="cfg_ow_key" value=""></p>
         <p><input type="button" class="undo" id="cfg_undo" name="undo" value="Remove last element"></p>
         <a id="clocklink" target=”_blank” href="/clock/cy10">Open my clock view!</a>
@@ -74,7 +74,7 @@
         } );
         $( "input.owm" ).click( function() {
             let size = $("input#" + this.id + "_size").val();
-            let units = $("input#" + this.id + "_units").val();
+            let units = $("input[name=cfg_ow_units]:checked").val();
             let zip = $("input#" + this.id + "_zip").val();
             let key = $("input#" + this.id + "_key").val();
             let append = '-' + this.name + size + ":" + units + ":" + zip + ":" + key;
